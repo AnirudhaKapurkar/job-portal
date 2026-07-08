@@ -15,5 +15,5 @@ public interface JobRepository extends JpaRepository<Job, Long> {
 	
 	List<Job> findByTitleContainingIgnoreCaseAndActiveTrue(String title);
 	
-	List<Job> findByLocationContainingIgnoreCaseActiveTrue(String location);
+	List<Job> findByLocationContainingIgnoreCaseAndActiveTrue(String location);
 }
