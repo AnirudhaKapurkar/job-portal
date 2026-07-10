@@ -2,7 +2,7 @@ package com.jobportal.job_portal.dto;
 
 import java.time.LocalDateTime;
 
-import com.jobportal.job_portal.enums.Application_status;
+import com.jobportal.job_portal.enums.ApplicationStatus;
 
 public record ApplicationResponse(
 		Long id,
@@ -10,7 +10,7 @@ public record ApplicationResponse(
 		String seekerEmail,
 		String jobTitle,
 		String company,
-		Application_status status,
+		ApplicationStatus status,
 		String resumePath,
 		LocalDateTime appliedAt
 		) {

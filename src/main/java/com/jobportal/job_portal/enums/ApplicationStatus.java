@@ -1,6 +1,6 @@
 package com.jobportal.job_portal.enums;
 
-public enum Application_status {
+public enum ApplicationStatus {
 	APPLIED,
 	SHORTLISTED,
 	REJECTED

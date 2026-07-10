@@ -50,6 +50,7 @@ public class SecurityConfig {
                 .requestMatchers("/api/auth/**").permitAll()
                 .requestMatchers("/api/files/download/**").permitAll()
                 .requestMatchers("/api/jobs/search").permitAll()
+                .requestMatchers("/error").permitAll()
                 .anyRequest().authenticated())
             .authenticationProvider(authenticationProvider())
             .addFilterBefore(jwtFilter,
