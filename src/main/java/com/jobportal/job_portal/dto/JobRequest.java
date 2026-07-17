@@ -1,5 +1,7 @@
 package com.jobportal.job_portal.dto;
 
+import java.time.LocalDate;
+
 import jakarta.validation.constraints.*;
 
 public record JobRequest(
@@ -16,7 +18,10 @@ public record JobRequest(
 		
 		String salary,
 		
-		String experienceRequired
+		String experienceRequired,
+		
+		@NotNull(message = "Closing date is required")
+		LocalDate closingDate
 		) {
 
 }

@@ -20,6 +20,16 @@ public class Job {
 	@Column(nullable=false)
 	private String title;
 	
+	private java.time.LocalDate closingDate;
+	
+	public java.time.LocalDate getClosingDate() {
+		return closingDate;
+	}
+
+	public void setClosingDate(java.time.LocalDate closingDate) {
+		this.closingDate = closingDate;
+	}
+
 	public long getId() {
 		return id;
 	}

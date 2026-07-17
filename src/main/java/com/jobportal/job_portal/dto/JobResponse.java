@@ -1,5 +1,6 @@
 package com.jobportal.job_portal.dto;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public record JobResponse(
@@ -12,7 +13,8 @@ public record JobResponse(
 		String experienceRequired,
 		boolean active,
 		String recruiterName,
-		LocalDateTime postedAt
+		LocalDateTime postedAt,
+		LocalDate closingDate
 		) {
 	
 }
