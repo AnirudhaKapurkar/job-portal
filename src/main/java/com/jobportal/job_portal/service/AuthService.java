@@ -12,7 +12,10 @@ import com.jobportal.job_portal.entity.User;
 import com.jobportal.job_portal.repository.UserRepository;
 import com.jobportal.job_portal.security.JwtUtil;
 
+import jakarta.transaction.Transactional;
+
 @Service
+@Transactional
 public class AuthService {
 	
 	private final UserRepository userRepository;
